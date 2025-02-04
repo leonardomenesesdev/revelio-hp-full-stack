@@ -1,0 +1,80 @@
+.Pag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o contêiner ocupe a altura total da janela */
+
+}
+.body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.personagem {
+    background-color: #EAEAEA;
+    color: black;
+    width: 300px;
+    margin: 10px;
+    height: 520px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+.personagem:hover{
+    cursor: pointer;
+    padding: 3px 3px;
+
+}
+.descricao{
+    background-color: #011C26;
+    width: 52%;
+    color: #946B2D;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: -5px;
+}
+.nome{
+    margin-bottom: -5px ;
+    font-size: 20px;
+}
+.descricao p{
+    font-size: 16px;
+    text-align: center;
+}
+.personagem img {
+    width: 90%;
+    height: 65%; /* Mantém a proporção da imagem */
+    max-height: 400px; /* Define uma altura máxima para as imagens */
+    object-fit: cover; /* Corta a imagem para preencher o contêiner */
+    margin-top: -5px;
+    border-radius: 10px;
+}
+.load-more-container {
+    width: 100%;
+}
+
+.load-more{
+    width: 8vw;
+    height: 5vh;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.load-more:hover{
+    background-color: #946B2D;
+}
