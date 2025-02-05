@@ -58,23 +58,27 @@
     border-radius: 10px;
 }
 .load-more-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
     width: 100%;
 }
 
-.load-more{
-    width: 8vw;
+.load-more {
     height: 5vh;
     font-size: 14px;
     text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
     color: black;
     border: none;
-    margin-bottom: 20px;
     border-radius: 20px;
     cursor: pointer;
 }
+
 .load-more:hover{
     background-color: #946B2D;
 }

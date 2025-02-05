@@ -6,6 +6,7 @@ import Home from './componentes/Home'
 import Hero from './componentes/Hero'
 import Header from './componentes/Header'
 import Search from './componentes/Search'
+import Feiticos from './componentes/Feiticos'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   console.log("app renderizado")
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Hero></Hero>}></Route>
         <Route path='/personagens' element={<Home/>}></Route>
+        <Route path='/feiticos' element={<Feiticos/>}></Route>
       </Routes>
   </Router>
   )
