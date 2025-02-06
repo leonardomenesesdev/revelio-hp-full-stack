@@ -7,10 +7,10 @@
 
 }
 .body {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .personagem {
@@ -27,11 +27,7 @@
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
-.personagem:hover{
-    cursor: pointer;
-    padding: 3px 3px;
 
-}
 .descricao{
     background-color: #011C26;
     width: 52%;

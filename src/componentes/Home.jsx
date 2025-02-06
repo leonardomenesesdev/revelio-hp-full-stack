@@ -7,9 +7,7 @@ import { Modal } from 'react-bootstrap'
 function Home(){
     const [personagens, setPersonagens] = useState([])
     const [visibleCount, setVisibleCount] = useState(10)
-    const [showModal, setShowModal] = useState(false)
-    const [selectedPersonagem, setSelectedPersonagem] = useState(null)
-
+ 
     useEffect(()=>{
         fetchPersonagens()
     }, [])
@@ -23,9 +21,7 @@ function Home(){
         setVisibleCount(prevCount => prevCount + 10)
     }
 
-    function scrollParaCima(){
-        window.scrollTo({top: 0, behavior:'smooth'})
-    }
+   
 
     function toUpperCase(element){
         return element.charAt(0).toUpperCase() + element.slice(1)
@@ -41,9 +37,9 @@ function Home(){
         
             <div className="body">
                 {
-                    personagens.slice(0, visibleCount).map(personagem =>(
+                    personagens.map(personagem =>(
                         <div className="personagem" key={personagem.name} onClick={() => getClicado(personagem)}>
-                            <img src={personagem.image} alt={personagem.name} />
+                            <img src={personagem.image} alt={personagem.name +" Photo"} />
                             <p className="nome"><strong>{personagem.name}</strong></p>
                             <p className="descricao"><strong>{personagem.house}</strong></p>
                             <p className="descricao"><strong>{toUpperCase(personagem.ancestry)}</strong></p>
@@ -51,11 +47,7 @@ function Home(){
                         </div>
                     ))
                 }
-                {visibleCount < personagens.length && (
-                    <div className="load-more-container">
-                        <button onClick={loadMore} className="load-more">Load More</button>
-                    </div>
-                )}
+              
             </div>
         </div>
     )
