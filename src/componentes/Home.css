@@ -1,3 +1,4 @@
+
 .Pag {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .personagem {
